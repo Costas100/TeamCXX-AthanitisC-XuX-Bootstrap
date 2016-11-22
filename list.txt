@@ -3,3 +3,4 @@
 3. dropdown menus
 4. carousel
 5. buttons
+6. glyphicons
