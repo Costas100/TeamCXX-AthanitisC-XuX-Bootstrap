@@ -9,6 +9,7 @@
 
   <title>bootstrap demo</title>
 </head>
+
 <body>
 
 <nav class="navbar navbar-inverse">
@@ -28,20 +29,22 @@
         <li class="active">
 	  <a href="#">Grid<span class="sr-only">(current)</span></a>
 	</li>
-	<li><a href="#">Navbar</a></li>
-	<li><a href="#">Dropdown</a></li>
-	<li><a href="#">Button</a></li>
-	<li><a href="#">Glyphicon</a></li>
+	<li><a href="#navbar">Navbar</a></li>
+	<li><a href="#dropdown">Dropdown</a></li>
+	<li><a href="#search">Search</a></li>
+	<li><a href="#button">Button</a></li>
+	<li><a href="#glyphicon">Glyphicon</a></li>
       </ul>
       
     </div>
   </div>
 </nav>
 
-<div class="container-fluid">
+<div class="container" id="body">
+
+<div class="container-fluid" id="grid">
   <div class="page-header">
     <h1>Grid</h1>
-    Here's a showcase of Bootstrap Grids
   </div>
   <div class="row">
     <div class="col-md-1">There</div>
@@ -57,24 +60,50 @@
     <div class="col-md-1">grid</div>
     <div class="col-md-1">rows.</div>
   </div>
-  <div class = "row">
+  <div class="row">
     <div class="col-md-4">Hello</div>
     <div class="col-md-4">there</div>
     <div class="col-md-4">world.</div>
   </div>
+</div> <!--grid-->
+
+<div class="container-fluid" id="navbar">
   <div class="page-header">
     <h1>Navbar</h1>
   </div>
-  <div class="page-header">
-    <h1>Dropdown</h1>
-  </div>
-  <div class="page-header">
-    <h1>Button</h1>
-  </div>
-  <div class="page-header">
-    <h1>Glyphicons</h1>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="page-header" id="dropdown">
+	<h1>Dropdown</h1>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="page-header" id="search">
+	<h1>Search</h1>
+      </div>
+    </div>
   </div>
 </div>
+
+<div class="container-fluid" id="button glyphicon">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="page-header" id="button">
+	<h1>Button</h1>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="page-header" id="glyphicon">
+	<h1>Glyphicon</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div> <!--body-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
