@@ -8,11 +8,21 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
   <title>bootstrap demo</title>
+
+  <style>
+    body { padding-top: 50px; }
+    .col-md-1, .col-md-4 { 
+      background-color: lightgrey; 
+      text-align: center;
+      border: 1px solid grey;
+      padding: 10px;
+    }
+    </style>
 </head>
 
 <body>
 
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -21,15 +31,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">CXX BOOTSTRAP</a>
+      <a class="navbar-brand" href="#"><strong>CXX</strong></a>
     </div>
 
     <div class="collapse navbar-collapse" id="navbar">
       <ul class="nav navbar-nav">
-        <li class="active">
-	  <a href="#">Grid<span class="sr-only">(current)</span></a>
-	</li>
-	<li><a href="#navbar">Navbar</a></li>
+        <li><a href="#grid">Grid</a></li>
+	<li><a href="#mynavbar">Navbar</a></li>
 	<li><a href="#dropdown">Dropdown</a></li>
 	<li><a href="#search">Search</a></li>
 	<li><a href="#button">Button</a></li>
@@ -40,34 +48,47 @@
   </div>
 </nav>
 
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3">Welcome to Bootstrap</h1>
+    <p class="lead">This is a showcase of some of the features in Bootstrap, a HTML, CSS and JS framework for responsive web development.</p>
+  </div>
+</div>
+
 <div class="container" id="body">
+
 
 <div class="container-fluid" id="grid">
   <div class="page-header">
     <h1>Grid</h1>
   </div>
+  <ul>
+    <li>There can be up to 12 .col-* in a .row</li>
+  </ul>
+  
   <div class="row">
-    <div class="col-md-1">There</div>
-    <div class="col-md-1">can</div>
-    <div class="col-md-1">be</div>
-    <div class="col-md-1">a</div>
-    <div class="col-md-1">max</div>
-    <div class="col-md-1">of</div>
-    <div class="col-md-1">12</div>
-    <div class="col-md-1">columns</div>
-    <div class="col-md-1">per</div>
-    <div class="col-md-1">bootstrap</div>
-    <div class="col-md-1">grid</div>
-    <div class="col-md-1">rows.</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
   </div>
   <div class="row">
-    <div class="col-md-4">Hello</div>
-    <div class="col-md-4">there</div>
-    <div class="col-md-4">world.</div>
+    <div class="col-md-4">.col-md-4</div>
+    <div class="col-md-4">.col-md-4</div>
+    <div class="col-md-4">.col-md-4</div>
+
   </div>
 </div> <!--grid-->
 
-<div class="container-fluid" id="navbar">
+<div class="container-fluid" id="mynavbar">
   <div class="page-header">
     <h1>Navbar</h1>
   </div>
