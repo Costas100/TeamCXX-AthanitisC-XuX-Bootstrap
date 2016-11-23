@@ -17,6 +17,7 @@
     border: 1px solid grey;
     padding: 10px;
     }
+    #body { margin-top: -25px; margin-bottom: 25px;}
   </style>
 </head>
 
@@ -52,6 +53,7 @@
     <div class="container">
       <h1 class="display-3">Welcome to Bootstrap</h1>
       <p class="lead">This is a showcase of some of the features in Bootstrap, a HTML, CSS and JS framework for responsive web development.</p>
+      <small>By C. Athanitis and X. Xu</small>
     </div>
   </div>
 
@@ -66,7 +68,9 @@
     </div>
     <div class="container-fluid" id="grid">
       <ul>
-	<li>There can be up to 12 .col-* in a .row</li>
+	<li>There can be up to 12 columns in a bootstrap row, or horizontal space <small>*If the number exceeds it will wrap</small></li>
+	<li>The behavior of .col-* in different screen sizes can be overwritten. Here we only specified the behavior for md (medium devices) dimensions.</li>
+	<li>Drag and observe!</li>
       </ul>
       
       <div class="row">
@@ -88,6 +92,12 @@
 	<div class="col-md-4">.col-md-4</div>
 	<div class="col-md-4">.col-md-4</div>
 	<div class="col-md-4">.col-md-4</div>
+      </div>
+      
+      <div class="row">
+	<div class="col-md-4 col-xs-8">.col-md-4<br>.col-xs-8</div>
+	<div class="col-md-4 col-xs-4">.col-md-4<br>.col-xs-4 </div>
+	<div class="col-md-4 col-xs-12">.col-md-4<br>.col-xs-12</div>
       </div>
       
     </div>
@@ -122,6 +132,8 @@
     </nav>
 
 
+    <div class="row">
+    <div class="col-md-6">
     <!--DROPDOWN-->
     <div class="page-header" id="dropdown">
       <h1>Dropdown</h1>
@@ -139,8 +151,10 @@
 	<li><a href="#dropdown">Separated link</a></li>
       </ul>
     </div>
+    </div><!--md-6-->
 
     <!--SEARCH-->
+    <div class="col-md-6">
     <div class="page-header" id="search">
       <h1>Search</h1>
     </div>
@@ -148,7 +162,12 @@
       <input type="text" class="form-control" placeholder="Search for anything you'd like">
     </div>
     <button type="submit" class="btn btn-default">Submit</button>
+    </div><!--6-->
 
+    </div> <!--row-->
+
+    <div class="row">
+<div class="col-md-6">
     <!--BUTTONS-->
     <div class="page-header" id="button">
       <h1>Button</h1>
@@ -158,8 +177,9 @@
       <button type="button" class="btn btn-default btn-xs">Middle Extra Small</button>
       <button type="button" class="btn btn-default btn-sm">Right Small</button>
     </div>
+</div>
 
-    
+<div class="col-md-6">    
     <!--GLYPHICONS-->
     <div class="page-header" id="glyphicon">
       <h1>Glyphicon</h1>
@@ -173,6 +193,8 @@
     <button type="button" class="btn btn-default btn-lg">
       <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
     </button>
+</div>
+</div><!--row-->
 
   </div> <!--body-->
 
