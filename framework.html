@@ -12,122 +12,172 @@
   <style>
     body { padding-top: 50px; }
     .col-md-1, .col-md-4 { 
-      background-color: lightgrey; 
-      text-align: center;
-      border: 1px solid grey;
-      padding: 10px;
+    background-color: lightgrey; 
+    text-align: center;
+    border: 1px solid grey;
+    padding: 10px;
     }
-    </style>
+  </style>
 </head>
 
 <body>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#"><strong>CXX</strong></a>
-    </div>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+	</button>
+	<a class="navbar-brand" href="#"><strong>CXX</strong></a>
+      </div>
 
-    <div class="collapse navbar-collapse" id="navbar">
-      <ul class="nav navbar-nav">
-        <li><a href="#grid">Grid</a></li>
-	<li><a href="#mynavbar">Navbar</a></li>
-	<li><a href="#dropdown">Dropdown</a></li>
-	<li><a href="#search">Search</a></li>
-	<li><a href="#button">Button</a></li>
-	<li><a href="#glyphicon">Glyphicon</a></li>
+      <div class="collapse navbar-collapse" id="navbar">
+	<ul class="nav navbar-nav">
+          <li><a href="#grid">Grid</a></li>
+	  <li><a href="#mynavbar">Navbar</a></li>
+	  <li><a href="#dropdown">Dropdown</a></li>
+	  <li><a href="#search">Search</a></li>
+	  <li><a href="#button">Button</a></li>
+	  <li><a href="#glyphicon">Glyphicon</a></li>
+	</ul>
+	
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-3">Welcome to Bootstrap</h1>
+      <p class="lead">This is a showcase of some of the features in Bootstrap, a HTML, CSS and JS framework for responsive web development.</p>
+    </div>
+  </div>
+
+  <div class="container" id="body">
+
+
+    
+    <!--GRID-->
+    
+    <div class="page-header">
+      <h1>Grid</h1>
+    </div>
+    <div class="container-fluid" id="grid">
+      <ul>
+	<li>There can be up to 12 .col-* in a .row</li>
       </ul>
       
-    </div>
-  </div>
-</nav>
-
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-3">Welcome to Bootstrap</h1>
-    <p class="lead">This is a showcase of some of the features in Bootstrap, a HTML, CSS and JS framework for responsive web development.</p>
-  </div>
-</div>
-
-<div class="container" id="body">
-
-
-<div class="container-fluid" id="grid">
-  <div class="page-header">
-    <h1>Grid</h1>
-  </div>
-  <ul>
-    <li>There can be up to 12 .col-* in a .row</li>
-  </ul>
-  
-  <div class="row">
-    <div class="col-md-1">.col-md-1</div>
-    <div class="col-md-1">.col-md-1</div>
-    <div class="col-md-1">.col-md-1</div>
-    <div class="col-md-1">.col-md-1</div>
-    <div class="col-md-1">.col-md-1</div>
-    <div class="col-md-1">.col-md-1</div>
-    <div class="col-md-1">.col-md-1</div>
-    <div class="col-md-1">.col-md-1</div>
-    <div class="col-md-1">.col-md-1</div>
-    <div class="col-md-1">.col-md-1</div>
-    <div class="col-md-1">.col-md-1</div>
-    <div class="col-md-1">.col-md-1</div>
-  </div>
-  <div class="row">
-    <div class="col-md-4">.col-md-4</div>
-    <div class="col-md-4">.col-md-4</div>
-    <div class="col-md-4">.col-md-4</div>
-
-  </div>
-</div> <!--grid-->
-
-<div class="container-fluid" id="mynavbar">
-  <div class="page-header">
-    <h1>Navbar</h1>
-  </div>
-</div>
-
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-6">
-      <div class="page-header" id="dropdown">
-	<h1>Dropdown</h1>
+      <div class="row">
+	<div class="col-md-1">.col-md-1</div>
+	<div class="col-md-1">.col-md-1</div>
+	<div class="col-md-1">.col-md-1</div>
+	<div class="col-md-1">.col-md-1</div>
+	<div class="col-md-1">.col-md-1</div>
+	<div class="col-md-1">.col-md-1</div>
+	<div class="col-md-1">.col-md-1</div>
+	<div class="col-md-1">.col-md-1</div>
+	<div class="col-md-1">.col-md-1</div>
+	<div class="col-md-1">.col-md-1</div>
+	<div class="col-md-1">.col-md-1</div>
+	<div class="col-md-1">.col-md-1</div>
       </div>
-    </div>
-    <div class="col-md-6">
-      <div class="page-header" id="search">
-	<h1>Search</h1>
+      
+      <div class="row">
+	<div class="col-md-4">.col-md-4</div>
+	<div class="col-md-4">.col-md-4</div>
+	<div class="col-md-4">.col-md-4</div>
       </div>
+      
     </div>
-  </div>
-</div>
 
-<div class="container-fluid" id="button glyphicon">
-  <div class="row">
-    <div class="col-md-6">
-      <div class="page-header" id="button">
-	<h1>Button</h1>
-      </div>
+
+    <!--NAVBAR-->
+    <div class="page-header" id="mynavbar">
+      <h1>Navbar</h1>
     </div>
-    <div class="col-md-6">
-      <div class="page-header" id="glyphicon">
-	<h1>Glyphicon</h1>
-      </div>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+	  </button>
+	  <a class="navbar-brand" href="#">In-page Navbar</a>
+	</div>
+
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse" id="example-navbar-collapse-1">
+	  <ul class="nav navbar-nav">
+            <li><a href="#mynavbar">Link1 <span class="sr-only">(current)</span></a></li>
+            <li><a href="#mynavbar">Link2</a></li>
+	    <li><a href="#mynavbar">Link3</a></li>
+	  </ul>
+	</div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+
+    <!--DROPDOWN-->
+    <div class="page-header" id="dropdown">
+      <h1>Dropdown</h1>
     </div>
-  </div>
-</div>
+    <div class="dropdown">
+      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+	Dropdown
+	<span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+	<li><a href="#dropdown">Action</a></li>
+	<li><a href="#dropdown">Another action</a></li>
+	<li><a href="#dropdown">Something else here</a></li>
+	<li role="separator" class="divider"></li>
+	<li><a href="#dropdown">Separated link</a></li>
+      </ul>
+    </div>
 
-</div> <!--body-->
+    <!--SEARCH-->
+    <div class="page-header" id="search">
+      <h1>Search</h1>
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Search for anything you'd like">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!--BUTTONS-->
+    <div class="page-header" id="button">
+      <h1>Button</h1>
+    </div>
+    <div class="btn-group" role="group" aria-label="...">
+      <button type="button" class="btn btn-default btn-lg">Left Large</button>
+      <button type="button" class="btn btn-default btn-xs">Middle Extra Small</button>
+      <button type="button" class="btn btn-default btn-sm">Right Small</button>
+    </div>
+
+    
+    <!--GLYPHICONS-->
+    <div class="page-header" id="glyphicon">
+      <h1>Glyphicon</h1>
+    </div>
+    Glyphicons are small symbols/pictures places that can be added to bottons or other text
+    <br>
+    <button type="button" class="btn btn-default btn-lg" aria-label="Left Align">
+      <span class="glyphicon glyphicon-headphones" aria-hidden="true"></span>
+    </button>
+
+    <button type="button" class="btn btn-default btn-lg">
+      <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
+    </button>
+
+  </div> <!--body-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
- 
+
