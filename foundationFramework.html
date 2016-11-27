@@ -4,6 +4,8 @@
     <title>foundation from bootsrappers</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+
     <style>
       .medium-6 {background-color: mistyrose;
       border: 1px solid black;}
@@ -13,61 +15,85 @@
   <body>
     <div class="row">
       <div class="large-12 columns">
-        <h1>this is Foundation.</h1>
+        <h1>This is our Foundation Sample Page.</h1>
       </div>
     </div>
 
     <div class="row">
       <div class="medium-6 columns">
-	<h2>this is a .medium-6 .columns</h2>
+	<h2>This is a .medium-6 .columns</h2>
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras augue purus, ultricies tincidunt vulputate at, blandit sed orci. Aenean libero nibh, dictum sit amet laoreet eget, luctus et metus. Nam vestibulum, justo dignissim interdum congue, felis diam dictum lacus, non suscipit mi nisl id massa. Quisque lorem magna, dapibus non blandit ac, tempor ac urna. Proin in ipsum aliquam urna vestibulum elementum vitae non tellus. Morbi at tincidunt tellus. Maecenas consectetur, mauris eget semper aliquam, ante erat malesuada neque, tempus porta quam ex nec nunc. Fusce at lacinia enim, interdum luctus quam. Pellentesque tempus sem velit, ut vestibulum augue fermentum nec. Nam finibus aliquam ligula, et lacinia sem rutrum vel.</p>
       </div>
       <div class="medium-6 columns">
-	<h2>this is a .medium-6 .columns</h2>
+	<h2>This is a .medium-6 .columns</h2>
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras augue purus, ultricies tincidunt vulputate at, blandit sed orci. Aenean libero nibh, dictum sit amet laoreet eget, luctus et metus. Nam vestibulum, justo dignissim interdum congue, felis diam dictum lacus, non suscipit mi nisl id massa. Quisque lorem magna, dapibus non blandit ac, tempor ac urna. Proin in ipsum aliquam urna vestibulum elementum vitae non tellus. Morbi at tincidunt tellus. Maecenas consectetur, mauris eget semper aliquam, ante erat malesuada neque, tempus porta quam ex nec nunc. Fusce at lacinia enim, interdum luctus quam. Pellentesque tempus sem velit, ut vestibulum augue fermentum nec. Nam finibus aliquam ligula, et lacinia sem rutrum vel.</p>	
       </div>
     </div>
 
-<form>
-  <div class="row">
-    <h2>forms</h2>
-    <div class="medium-6 columns">
-      <label>Input Label
-        <input type="text" placeholder=".medium-6.columns">
-      </label>
-    </div>
-    <div class="medium-6 columns">
-      <label>Input Label
-        <input type="text" placeholder=".medium-6.columns">
-      </label>
-    </div>
-  </div>
-</form>
+    <form>
+      <div class="row">
+	<h2>These are forms</h2>
+	<div class="medium-6 columns">
+	  <label>Input Label
+            <input type="text" placeholder=".medium-6.columns">
+	  </label>
+	</div>
+	<div class="medium-6 columns">
+	  <label>Input Label
+            <input type="text" placeholder=".medium-6.columns">
+	  </label>
+	</div>
+      </div>
+    </form>
 
-<form>
-  
-    <div class="small-9 small-centered columns">
+    
       
-      <h4>These are Radio Buttons</h4>
+      <div class="small-9 small-centered columns">
+	
+	<h2>These are Radio Buttons</h2>
+	
+	<ul class="button-group round toggle" data-toggle="buttons-radio">
+	  <li>
+            <input type="radio" id="r1" name="r-group" data-toggle="button">
+            <label class="button" for="r1">Top</label>
+	  </li>
+	  <li>
+            <input type="radio" id="r2" name="r-group" data-toggle="button">
+            <label class="button" for="r2">Middle</label>
+	  </li>
+	  <li>
+            <input type="radio" id="r3" name="r-group" data-toggle="button">
+            <label class="button" for="r3">Bottom</label>
+	  </li>
+	</ul>
+	
+      </div>
+   
+   
+
+
       
-      <ul class="button-group round toggle" data-toggle="buttons-radio">
-	<li>
-          <input type="radio" id="r1" name="r-group" data-toggle="button">
-          <label class="button" for="r1">Top</label>
-	</li>
-	<li>
-          <input type="radio" id="r2" name="r-group" data-toggle="button">
-          <label class="button" for="r2">Middle</label>
-	</li>
-	<li>
-          <input type="radio" id="r3" name="r-group" data-toggle="button">
-          <label class="button" for="r3">Bottom</label>
-	</li>
-      </ul>
+      <div class="row" data-equalizer data-equalize-on="medium" id="test-eq">
+	<h2>These are callouts</h2>
+	<div class="medium-4 columns">
+	  <div class="callout" data-equalizer-watch>
+	    <img src= "http://www.stuycs.org/_/rsrc/1473258739012/config/customLogo.gif?revision=2">
+	  </div>
+	</div>
+	<div class="medium-4 columns">
+	  <div class="callout" data-equalizer-watch>
+	    <p>.. with equalizers than format content nicely!</p>
+	  </div>
+	</div>
+	<div class="medium-4 columns">
+	  <div class="callout" data-equalizer-watch>
+	    <img src= "http://www.stuycs.org/_/rsrc/1473258739012/config/customLogo.gif?revision=2">
+	  </div>
+	</div>
+      </div>
+
+
       
-    </div>
- 
-</form> 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
